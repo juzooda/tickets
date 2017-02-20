@@ -1,0 +1,43 @@
+PODS:
+  - ModelMapper (6.0.0)
+  - Nimble (6.0.1)
+  - OHHTTPStubs (5.2.3):
+    - OHHTTPStubs/Default (= 5.2.3)
+  - OHHTTPStubs/Core (5.2.3)
+  - OHHTTPStubs/Default (5.2.3):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.3)
+  - OHHTTPStubs/Swift (5.2.3):
+    - OHHTTPStubs/Core
+  - Quick (1.1.0)
+  - TicketService (0.1.0):
+    - ModelMapper (~> 6.0)
+
+DEPENDENCIES:
+  - Nimble (~> 6.0)
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+  - Quick (~> 1.1)
+  - TicketService (from `../`)
+
+EXTERNAL SOURCES:
+  TicketService:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
+  Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  TicketService: 0d3d2499e81a42b398931d4f0d0e03e42c25c793
+
+PODFILE CHECKSUM: '09473bbc6dcc0f7024af5b1854105e4d921d805c'
+
+COCOAPODS: 1.1.1

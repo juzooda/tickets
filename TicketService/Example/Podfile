@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'TicketService_Example' do
+  pod 'TicketService', :path => '../'
+
+  target 'TicketService_Tests' do
+    inherit! :search_paths
+  pod 'Quick', '~> 1.1'
+  pod 'Nimble', '~> 6.0'
+  pod 'OHHTTPStubs'
+  pod 'OHHTTPStubs/Swift'
+  end
+end
