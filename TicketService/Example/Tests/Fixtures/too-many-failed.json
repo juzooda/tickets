@@ -1,0 +1,4 @@
+{
+	"error": "TooManyFailedLoginAttempts",
+	"description": "Too many failed login attempts in a short period of time, try again later."
+}

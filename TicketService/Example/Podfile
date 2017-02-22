@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'TicketService_Example' do
+  pod 'TicketService', :path => '../'
+
+  target 'TicketService_Tests' do
+    inherit! :search_paths
+    pod 'OHHTTPStubs', '~> 5.2'
+  end
+end

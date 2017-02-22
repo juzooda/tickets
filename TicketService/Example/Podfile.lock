@@ -1,0 +1,34 @@
+PODS:
+  - ModelMapper (6.0.0)
+  - OHHTTPStubs (5.2.3):
+    - OHHTTPStubs/Default (= 5.2.3)
+  - OHHTTPStubs/Core (5.2.3)
+  - OHHTTPStubs/Default (5.2.3):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.3)
+  - TicketService (0.1.0):
+    - ModelMapper (~> 6.0)
+
+DEPENDENCIES:
+  - OHHTTPStubs (~> 5.2)
+  - TicketService (from `../`)
+
+EXTERNAL SOURCES:
+  TicketService:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
+  OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
+  TicketService: 7d5ef70b7559543294d672590657dea2bd4af18a
+
+PODFILE CHECKSUM: d960a1764188dabf60de238ba11e07f1ce5e0cf8
+
+COCOAPODS: 1.1.1
