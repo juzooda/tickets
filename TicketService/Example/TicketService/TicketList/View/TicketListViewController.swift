@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
+//  TicketListViewController.swift
 //  TicketService
 //
-//  Created by odajuzo@gmail.com on 02/21/2017.
-//  Copyright (c) 2017 odajuzo@gmail.com. All rights reserved.
+//  Created by Juzo Oda on 22/02/2017.
+//  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ struct TicketsModelConstants {
     static let baseURL = "https://mxtechtest.zendesk.com/api/v2/views/39551161/tickets.json"
 }
 
-class ViewController: UIViewController {
+class TicketListViewController: UIViewController {
 
     private var ticketService: Ticket!
     
@@ -36,6 +36,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

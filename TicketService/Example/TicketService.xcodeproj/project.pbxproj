@@ -14,10 +14,10 @@
 		0ED572031E5CD324008F3DA5 /* OHTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED572011E5CD04A008F3DA5 /* OHTTPHelper.swift */; };
 		0ED572051E5CFD48008F3DA5 /* invalid-endpoint.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ED572041E5CFD48008F3DA5 /* invalid-endpoint.json */; };
 		0ED572071E5D03B3008F3DA5 /* invalid-json.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ED572061E5D03B3008F3DA5 /* invalid-json.json */; };
+		0ED5720D1E5D0D0A008F3DA5 /* TicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5720C1E5D0D0A008F3DA5 /* TicketListViewController.swift */; };
 		2CD9E11675CBBED3FF8E2F04 /* Pods_TicketService_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7152F471F240DFEF2A7A /* Pods_TicketService_Tests.framework */; };
 		2F077BC448B263E2A978E679 /* Pods_TicketService_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D4C04CD599B7071785F573 /* Pods_TicketService_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -43,13 +43,13 @@
 		0ED572011E5CD04A008F3DA5 /* OHTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHTTPHelper.swift; sourceTree = "<group>"; };
 		0ED572041E5CFD48008F3DA5 /* invalid-endpoint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "invalid-endpoint.json"; sourceTree = "<group>"; };
 		0ED572061E5D03B3008F3DA5 /* invalid-json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "invalid-json.json"; sourceTree = "<group>"; };
+		0ED5720C1E5D0D0A008F3DA5 /* TicketListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListViewController.swift; sourceTree = "<group>"; };
 		1BEE6283BF0F5AE07914D2BD /* Pods-TicketService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Example/Pods-TicketService_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		22BC7D4A6265CBA987134BBA /* Pods-TicketService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Example/Pods-TicketService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		359DDC18DCF2F588A0E76785 /* TicketService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TicketService.podspec; path = ../TicketService.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TicketService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -111,6 +111,38 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		0ED572081E5D0C82008F3DA5 /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				0ED5720B1E5D0CD2008F3DA5 /* Presenter */,
+				0ED5720A1E5D0CB5008F3DA5 /* Interactor */,
+				0ED572091E5D0CA9008F3DA5 /* View */,
+			);
+			path = TicketList;
+			sourceTree = "<group>";
+		};
+		0ED572091E5D0CA9008F3DA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ED5720C1E5D0D0A008F3DA5 /* TicketListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ED5720A1E5D0CB5008F3DA5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0ED5720B1E5D0CD2008F3DA5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +167,8 @@
 		607FACD21AFB9204008FA782 /* Example for TicketService */ = {
 			isa = PBXGroup;
 			children = (
+				0ED572081E5D0C82008F3DA5 /* TicketList */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -409,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0ED5720D1E5D0D0A008F3DA5 /* TicketListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
