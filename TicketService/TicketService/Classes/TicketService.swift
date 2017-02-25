@@ -35,6 +35,7 @@ public class TicketService: NSObject, Ticket, URLSessionTaskDelegate {
                 return
             }
         }
+        
         task.resume()
         return task
     }

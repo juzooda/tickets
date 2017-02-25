@@ -15,8 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupLandingViewController()
         return true
+    }
+    
+    func setupLandingViewController() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        self.window = window
+        let ticketsViewController = TicketListBuilder.buid()
+        let mainNavigationViewController = UINavigationController(rootViewController: ticketsViewController)
+        window.rootViewController = mainNavigationViewController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

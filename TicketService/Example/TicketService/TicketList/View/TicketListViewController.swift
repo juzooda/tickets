@@ -9,43 +9,26 @@
 import UIKit
 import TicketService
 
-struct TicketsModelConstants {
-    static let username = "acooke+techtest@zendesk.com"
-    static let password = "mobile"
-    static let baseURL = "https://mxtechtest.zendesk.com/api/v2/views/39551161/tickets.json"
+protocol TicketListView: class {
+    func update(viewModel: TicketListViewModel)
 }
 
-class TicketListViewController: UIViewController {
+class TicketListViewController:
+UIViewController,
+TicketListView {
 
-    private var ticketService: Ticket!
+    var presenter: TicketListPresenter!
+    let dataSource = TicketListViewDataSource()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ticketService = TicketServiceBuilder().build(
-            username: TicketsModelConstants.username,
-            password: TicketsModelConstants.password,
-            baseURL: TicketsModelConstants.baseURL
-        )
-        
-        _ = ticketService.fetchTickets { response in
-            print(response)
-        }
+        tableView.dataSource = dataSource
+        presenter.loadTickets()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func update(viewModel: TicketListViewModel) {
+        dataSource.update(list: viewModel.ticketList)
+        tableView.reloadData()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
