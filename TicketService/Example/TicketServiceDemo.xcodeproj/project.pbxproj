@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4637FB1E61FD1D0097FE5B /* TicketListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4637FA1E61FD1D0097FE5B /* TicketListInteractorTests.swift */; };
+		0E4637FD1E61FEBF0097FE5B /* TicketListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4637FC1E61FEBF0097FE5B /* TicketListPresenterTests.swift */; };
+		0E4638021E6208750097FE5B /* LoadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4638001E62078F0097FE5B /* LoadFile.swift */; };
 		0ED571F51E5CCE9A008F3DA5 /* TicketsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED571F41E5CCE9A008F3DA5 /* TicketsServiceTests.swift */; };
 		0ED571FD1E5CCF96008F3DA5 /* authentication-error.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ED571F71E5CCF89008F3DA5 /* authentication-error.json */; };
 		0ED571FE1E5CCF96008F3DA5 /* tickets.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ED571F81E5CCF89008F3DA5 /* tickets.json */; };
@@ -21,12 +24,12 @@
 		0EF2B3DF1E61E3F700BDFC92 /* TicketListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B3DE1E61E3F700BDFC92 /* TicketListBuilder.swift */; };
 		0EF2B3E11E61E86300BDFC92 /* TicketListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2B3E01E61E86300BDFC92 /* TicketListViewController.xib */; };
 		0EF2B3E31E61ECB900BDFC92 /* TicketListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF2B3E21E61ECB900BDFC92 /* TicketListViewDataSource.swift */; };
+		0EFAFD431E61F53500AAAA62 /* TicketListBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAFD421E61F53500AAAA62 /* TicketListBuilderTests.swift */; };
 		2CD9E11675CBBED3FF8E2F04 /* Pods_TicketService_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7152F471F240DFEF2A7A /* Pods_TicketService_Tests.framework */; };
 		2F077BC448B263E2A978E679 /* Pods_TicketService_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D4C04CD599B7071785F573 /* Pods_TicketService_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		000049DFE7A0EC9E97B9302C /* Pods-TicketService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Tests/Pods-TicketService_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0E4637FA1E61FD1D0097FE5B /* TicketListInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListInteractorTests.swift; sourceTree = "<group>"; };
+		0E4637FC1E61FEBF0097FE5B /* TicketListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListPresenterTests.swift; sourceTree = "<group>"; };
+		0E4638001E62078F0097FE5B /* LoadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFile.swift; sourceTree = "<group>"; };
 		0ED571F41E5CCE9A008F3DA5 /* TicketsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsServiceTests.swift; sourceTree = "<group>"; };
 		0ED571F71E5CCF89008F3DA5 /* authentication-error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "authentication-error.json"; sourceTree = "<group>"; };
 		0ED571F81E5CCF89008F3DA5 /* tickets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickets.json; sourceTree = "<group>"; };
@@ -55,17 +61,17 @@
 		0EF2B3DE1E61E3F700BDFC92 /* TicketListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListBuilder.swift; sourceTree = "<group>"; };
 		0EF2B3E01E61E86300BDFC92 /* TicketListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketListViewController.xib; sourceTree = "<group>"; };
 		0EF2B3E21E61ECB900BDFC92 /* TicketListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListViewDataSource.swift; sourceTree = "<group>"; };
+		0EFAFD421E61F53500AAAA62 /* TicketListBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListBuilderTests.swift; sourceTree = "<group>"; };
 		1BEE6283BF0F5AE07914D2BD /* Pods-TicketService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Example/Pods-TicketService_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		22BC7D4A6265CBA987134BBA /* Pods-TicketService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Example/Pods-TicketService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		359DDC18DCF2F588A0E76785 /* TicketService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TicketService.podspec; path = ../TicketService.podspec; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* TicketService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* TicketServiceDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketServiceDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* TicketService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* TicketServiceDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketServiceDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8384CD9174CEF77CC801E9D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B8DFBB5C8AA6909F3AD42B54 /* Pods-TicketService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketService_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketService_Tests/Pods-TicketService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5FD7152F471F240DFEF2A7A /* Pods_TicketService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +99,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ED571F31E5CCE69008F3DA5 /* Model */ = {
+		0ED571F31E5CCE69008F3DA5 /* TicketsServiceTests */ = {
 			isa = PBXGroup;
 			children = (
 				0ED571F41E5CCE9A008F3DA5 /* TicketsServiceTests.swift */,
 			);
+			name = TicketsServiceTests;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED572011E5CD04A008F3DA5 /* OHTTPHelper.swift */,
+				0E4638001E62078F0097FE5B /* LoadFile.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -167,6 +175,16 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		0EF2B3E41E61F1AE00BDFC92 /* TicketListTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAFD421E61F53500AAAA62 /* TicketListBuilderTests.swift */,
+				0E4637FA1E61FD1D0097FE5B /* TicketListInteractorTests.swift */,
+				0E4637FC1E61FEBF0097FE5B /* TicketListPresenterTests.swift */,
+			);
+			path = TicketListTests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -182,8 +200,8 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* TicketService_Example.app */,
-				607FACE51AFB9204008FA782 /* TicketService_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* TicketServiceDemo_Example.app */,
+				607FACE51AFB9204008FA782 /* TicketServiceDemo_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,10 +230,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0EF2B3E41E61F1AE00BDFC92 /* TicketListTests */,
 				0ED572001E5CD002008F3DA5 /* Helper */,
 				0ED571F61E5CCED0008F3DA5 /* Fixtures */,
-				0ED571F31E5CCE69008F3DA5 /* Model */,
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				0ED571F31E5CCE69008F3DA5 /* TicketsServiceTests */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -262,9 +280,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* TicketService_Example */ = {
+		607FACCF1AFB9204008FA782 /* TicketServiceDemo_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketService_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketServiceDemo_Example" */;
 			buildPhases = (
 				09B7B64BCE9D368DCB3F5DF1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -277,14 +295,14 @@
 			);
 			dependencies = (
 			);
-			name = TicketService_Example;
+			name = TicketServiceDemo_Example;
 			productName = TicketService;
-			productReference = 607FACD01AFB9204008FA782 /* TicketService_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* TicketServiceDemo_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* TicketService_Tests */ = {
+		607FACE41AFB9204008FA782 /* TicketServiceDemo_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketService_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketServiceDemo_Tests" */;
 			buildPhases = (
 				41ACDCF6FACC9C79C1F16044 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -298,9 +316,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = TicketService_Tests;
+			name = TicketServiceDemo_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* TicketService_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* TicketServiceDemo_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +340,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TicketService" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TicketServiceDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -335,8 +353,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* TicketService_Example */,
-				607FACE41AFB9204008FA782 /* TicketService_Tests */,
+				607FACCF1AFB9204008FA782 /* TicketServiceDemo_Example */,
+				607FACE41AFB9204008FA782 /* TicketServiceDemo_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -479,8 +497,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED572031E5CD324008F3DA5 /* OHTTPHelper.swift in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				0EFAFD431E61F53500AAAA62 /* TicketListBuilderTests.swift in Sources */,
+				0E4637FD1E61FEBF0097FE5B /* TicketListPresenterTests.swift in Sources */,
+				0E4637FB1E61FD1D0097FE5B /* TicketListInteractorTests.swift in Sources */,
 				0ED571F51E5CCE9A008F3DA5 /* TicketsServiceTests.swift in Sources */,
+				0E4638021E6208750097FE5B /* LoadFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +510,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* TicketService_Example */;
+			target = 607FACCF1AFB9204008FA782 /* TicketServiceDemo_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -629,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8DFBB5C8AA6909F3AD42B54 /* Pods-TicketService_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -642,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketService_Example.app/TicketService_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketServiceDemo_Example.app/TicketServiceDemo_Example";
 			};
 			name = Debug;
 		};
@@ -650,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 000049DFE7A0EC9E97B9302C /* Pods-TicketService_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -659,14 +682,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketService_Example.app/TicketService_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketServiceDemo_Example.app/TicketServiceDemo_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TicketService" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "TicketServiceDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -675,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketService_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketServiceDemo_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -684,7 +707,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketService_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TicketServiceDemo_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

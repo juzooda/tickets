@@ -8,20 +8,25 @@
 
 import Foundation
 
-
 func handle(response: Data, completion: @escaping TicketCompletion) {
     do {
         let responseDictionary = try JSONSerialization.jsonObject(with: response, options: .mutableContainers)
         if let errorMessage = errorOnResponse(response: responseDictionary) {
             let errorCompletion = createTicketCompletionWithError(string: errorMessage)
-            completion(errorCompletion)
+            DispatchQueue.main.sync {
+                completion(errorCompletion)
+            }
         }else{
             let parseCompletion = createTicketCompletionWithValid(response: responseDictionary)
-            completion(parseCompletion)
+            DispatchQueue.main.sync {
+                completion(parseCompletion)
+            }
         }
     }catch {
         let jsonErrorCompletion = createTicketCompletionWithValid(response: SessionErrorMessage.wrongFormat.rawValue)
-        completion(jsonErrorCompletion)
+        DispatchQueue.main.sync {
+            completion(jsonErrorCompletion)
+        }
     }
 }
 
@@ -29,7 +34,9 @@ func handle(error: Error, completion: @escaping TicketCompletion) {
     let errorMessage = error.localizedDescription ?? SessionErrorMessage.emptyData.rawValue
     let responseError = ResponseError.communication(message: errorMessage)
     let response = TicketResponse(error: responseError, tickets: [])
-    completion(response)
+    DispatchQueue.main.sync {
+        completion(response)
+    }
 }
 
 private func createTicketCompletionWithError(string: String) -> TicketResponse {

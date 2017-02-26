@@ -31,13 +31,11 @@ class TicketListPresenterImp: TicketListPresenter {
         }
     }
     
-    private func createViewModel(model: TicketResponse) {
+    func createViewModel(model: TicketResponse) {
         let itemsViewModel = model.tickets.map { model -> TicketItemViewModel in
             TicketItemViewModel(title: model.subject, description: model.description)
         }
         let vm = TicketListViewModel(title: "Tickets", ticketList: itemsViewModel)
-        DispatchQueue.main.sync {
-            view.update(viewModel: vm)
-        }
+        view.update(viewModel: vm)
     }
 }

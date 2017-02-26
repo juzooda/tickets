@@ -17,7 +17,7 @@ struct TicketsModelConstants {
 
 struct TicketListBuilder {
     
-    static func buid() -> TicketListViewController {
+    func build() -> TicketListViewController {
         let service = ticketService()
         let interactor = TicketListInteractorImp(service: service)
         let view = TicketListViewController(nibName: "TicketListViewController", bundle: Bundle.main)
@@ -26,7 +26,7 @@ struct TicketListBuilder {
         return view
     }
     
-    private static func ticketService() -> Ticket {
+    func ticketService() -> Ticket {
         return TicketServiceBuilder().build(
             username: TicketsModelConstants.username,
             password: TicketsModelConstants.password,

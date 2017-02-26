@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "TicketService_Example.app"
-               BlueprintName = "TicketService_Example"
-               ReferencedContainer = "container:TicketService.xcodeproj">
+               BuildableName = "TicketServiceDemo_Example.app"
+               BlueprintName = "TicketServiceDemo_Example"
+               ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "TicketService_Tests.xctest"
-               BlueprintName = "TicketService_Tests"
-               ReferencedContainer = "container:TicketService.xcodeproj">
+               BuildableName = "TicketServiceDemo_Tests.xctest"
+               BlueprintName = "TicketServiceDemo_Tests"
+               ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "TicketService_Tests.xctest"
-               BlueprintName = "TicketService_Tests"
-               ReferencedContainer = "container:TicketService.xcodeproj">
+               BuildableName = "TicketServiceDemo_Tests.xctest"
+               BlueprintName = "TicketServiceDemo_Tests"
+               ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TicketService_Example.app"
-            BlueprintName = "TicketService_Example"
-            ReferencedContainer = "container:TicketService.xcodeproj">
+            BuildableName = "TicketServiceDemo_Example.app"
+            BlueprintName = "TicketServiceDemo_Example"
+            ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TicketService_Example.app"
-            BlueprintName = "TicketService_Example"
-            ReferencedContainer = "container:TicketService.xcodeproj">
+            BuildableName = "TicketServiceDemo_Example.app"
+            BlueprintName = "TicketServiceDemo_Example"
+            ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -100,9 +100,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TicketService_Example.app"
-            BlueprintName = "TicketService_Example"
-            ReferencedContainer = "container:TicketService.xcodeproj">
+            BuildableName = "TicketServiceDemo_Example.app"
+            BlueprintName = "TicketServiceDemo_Example"
+            ReferencedContainer = "container:TicketServiceDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
