@@ -22,7 +22,6 @@ The following sections will show you how to use the Ticket iOS Library to setup 
 CocoaPods is a dependency manager, which automates and simplifies the process of using 3rd-party libraries like Engage SDK in your projects. You can install it with the following command:
 
 ```
-#!ruby
 gem install cocoapods.
 ```
 
@@ -32,14 +31,12 @@ gem install cocoapods.
 To integrate Ticket iOS into your Xcode project using CocoaPods, specify it in your Podfile: 
 
 ```
-#!ruby
 pod 'TicketService'
 ```
 
 # Setup #
 
 ```
-#!swift
 let ticketService = TicketServiceBuilder().build(
             username: "username",
             password: "password",
@@ -52,8 +49,6 @@ let ticketService = TicketServiceBuilder().build(
 To retrieve tickets simply call the method 
 
 ```
-#!swift
-
 let dataTask = ticketService.fetchTickets { response in
     print(response.error)
     print(response.tickets)
